@@ -106,6 +106,16 @@ script has a lower priority and other processes demand access to the CPU. Simult
 we may want to ensure that the script still runs could be something to consider when
 making this compromise.
 
+10/05/2020:
+Another way we can improve the system archietcture. Load all the potential cron
+jobs into script and then check against all so we only continuously run one
+thread. Need to test so that performance is not impacted too severly.
+
+Okay, did some minor wiki edits. Great, turns out not asss many as I initially thought
+I would and the documentation is better than I had originally perceived. Perhaps
+it required some patience and my mindset during the coding challenge was
+one that tried to rush understanding. Good takeaway.
+
 Things to note:
 - We may not be able to completely capture how time is processed in cron, may need several rules to aid in this
     - I believe I am only touching cron at a surface level, there are other functionalities such as permissions and
